@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useState, useEffect } from "react";
-import { createRoutesFromChildren, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import Backup from "../assets/images/backup.png";
 import useTitle from "../hooks/useTitle";
@@ -23,7 +23,7 @@ export const MovieDetail = () => {
     }
 
     fetchMovie();
-  }, []);
+  });
 
   useTitle(movie.title);
 
